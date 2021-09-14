@@ -26,5 +26,5 @@ components:
            protocol: ws
            secure: 'false'
     memoryLimit: "4Gi"
-    cpuLimit: "500m"
-    cpuRequest: "250m"
+    cpuLimit: "1"
+    cpuRequest: "500m"
