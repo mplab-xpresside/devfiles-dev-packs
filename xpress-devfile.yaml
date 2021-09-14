@@ -8,7 +8,7 @@ components:
   - type: cheEditor
     reference: >-
       https://raw.githubusercontent.com/mplab-xpresside/devfiles-dev/main/meta-mplab-xpresside.yaml
-  - alias: mcc
+  - alias: xpresss
     type: dockerimage
     image: 453345707098.dkr.ecr.us-west-2.amazonaws.com/xpress/mcu8/mcc-4.2.1:latest
     volumes:
@@ -26,3 +26,4 @@ components:
            protocol: ws
            secure: 'false'
     memoryLimit: "4Gi"
+    cpuLimit: "500m"
