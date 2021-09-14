@@ -27,3 +27,4 @@ components:
            secure: 'false'
     memoryLimit: "4Gi"
     cpuLimit: "500m"
+    cpuRequest: "250m"
