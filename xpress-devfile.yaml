@@ -14,8 +14,6 @@ components:
     volumes:
       - name: xpressprojects
         containerPath: /home/projects
-      - name: mccapp
-        containerPath: /home/app
     endpoints:
       - name: mcc-view-server
         port: 2000
