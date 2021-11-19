@@ -14,11 +14,6 @@ components:
     volumes:
       - name: xpressprojects
         containerPath: /home/projects
-      - name: version
-        mountPath: /home/version
-    command: ["/bin/sh", "-c"]
-    args:
-      - "4.2.1" >> /home/version/mcc.txt;
     endpoints:
       - name: mcc-view-server
         port: 2000
