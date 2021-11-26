@@ -61,7 +61,7 @@ spec:
            name: plugins
          - mountPath: "/home/projects"
            name: xpressprojects
-         - mountPath: "/home/app"
+         - mountPath: "/home/versions"
            name: mccapp
      mountSources: true
      ports:
