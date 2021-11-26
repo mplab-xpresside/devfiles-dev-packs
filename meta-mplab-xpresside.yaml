@@ -48,7 +48,7 @@ spec:
         discoverable: false
   containers:
    - name: xpress-ide
-     image: "453345707098.dkr.ecr.us-west-2.amazonaws.com/xpress/dev/xpress-image-v1.10.01.32:latest"
+     image: "453345707098.dkr.ecr.us-west-2.amazonaws.com/xpress/dev/xpress-image-v1.10.01.33:latest"
      env:
          - name: THEIA_PLUGINS
            value: local-dir:../plugins
@@ -61,8 +61,6 @@ spec:
            name: plugins
          - mountPath: "/home/projects"
            name: xpressprojects
-         - mountPath: "/home/app"
-           name: mccapp
      mountSources: true
      ports:
          - exposedPort: 3000
