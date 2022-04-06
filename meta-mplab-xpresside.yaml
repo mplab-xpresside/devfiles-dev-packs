@@ -1,7 +1,7 @@
 apiVersion: v2
 publisher: cherxp
 name: che-xpress
-version: 7.4.0
+version: 1.20.1
 type: Che Editor
 displayName: xpress-ide
 title: Xpress for Eclipse Che
