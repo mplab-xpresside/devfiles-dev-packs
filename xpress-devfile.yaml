@@ -8,14 +8,6 @@ components:
   - type: cheEditor
     reference: >-
       https://raw.githubusercontent.com/mplab-xpresside/devfiles-dev/main/meta-mplab-xpresside.yaml
-  - alias: packs
-    type: dockerimage
-    image: 453345707098.dkr.ecr.us-west-2.amazonaws.com/xpress/dev/xpress-packs:29062022-1
-    volumes:
-      - name: packs
-        containerPath: /home/lib/packs
-    memoryLimit: "256Mi"
-    memoryRequest: "128Mi"
   - alias: mcc
     type: dockerimage
     image: 453345707098.dkr.ecr.us-west-2.amazonaws.com/xpress/prod/mcc-v5.1.0:latest
@@ -35,3 +27,11 @@ components:
            secure: 'false'
     memoryLimit: "1Gi"
     memoryRequest: "256Mi"
+  - alias: packs
+    type: dockerimage
+    image: 453345707098.dkr.ecr.us-west-2.amazonaws.com/xpress/dev/xpress-packs:06072022-2
+    volumes:
+      - name: packs
+        containerPath: /home/lib/packs
+    memoryLimit: "256Mi"
+    memoryRequest: "128Mi"
