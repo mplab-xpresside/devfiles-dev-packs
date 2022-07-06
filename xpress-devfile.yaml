@@ -29,7 +29,7 @@ components:
     memoryRequest: "256Mi"
   - alias: packs
     type: dockerimage
-    image: 453345707098.dkr.ecr.us-west-2.amazonaws.com/xpress/dev/xpress-packs:06072022-2
+    image: 453345707098.dkr.ecr.us-west-2.amazonaws.com/xpress/dev/xpress-packs:06072022-3
     volumes:
       - name: packs
         containerPath: /home/lib/packs
