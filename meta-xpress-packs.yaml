@@ -1,0 +1,21 @@
+apiVersion: v2
+publisher: xpress
+name: my-packs-plugin
+version: 0.0.1
+type: Che Plugin
+displayName: My Packs Service
+title: Xpress Packs Service Plugin
+description: Packs container.
+icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+repository: https://github.com/mplab-xpresside/devfiles-dev-packs
+firstPublicationDate: "2019-11-06"
+category: Other
+spec:
+  containers:
+   - name: packs
+     image: "453345707098.dkr.ecr.us-west-2.amazonaws.com/xpress/dev/xpress-packs:08072022-v2"
+     volumes:
+       - mountPath: "/home/lib/packs"
+         name: packs
+     mountSources: true
+     memoryLimit: "256Mi"
