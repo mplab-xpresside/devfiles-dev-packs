@@ -15,8 +15,8 @@ spec:
    - name: packs
      image: "453345707098.dkr.ecr.us-west-2.amazonaws.com/xpress/dev/xpress-packs:12072022-v2"
      volumeMounts:
-       - mountPath: "/home/lib/packs"
-         name: packs
+       - name: packs
+         mountPath: "/home/packs"
          readOnly: true
      mountSources: true
      memoryLimit: "256Mi"
