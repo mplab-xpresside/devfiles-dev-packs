@@ -2,6 +2,10 @@
 apiVersion: 1.0.0
 metadata:
   name: xpress
+spec:
+  volumes:
+    - name: packs
+      emptyDir: {}  
 attributes:
   persistVolumes: 'false'
 components:
