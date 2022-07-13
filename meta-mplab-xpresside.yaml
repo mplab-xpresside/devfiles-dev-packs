@@ -61,6 +61,7 @@ spec:
            name: plugins
          - mountPath: "/home/projects"
            name: xpressprojects
+     volumeMounts:
          - mountPath: "/home/lib/packs"
            name: packs
      mountSources: true
