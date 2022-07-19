@@ -13,7 +13,7 @@ category: Other
 spec:
   containers:
    - name: packs
-     image: "453345707098.dkr.ecr.us-west-2.amazonaws.com/xpress/dev/xpress-packs:v6.0"
+     image: "453345707098.dkr.ecr.us-west-2.amazonaws.com/xpress/dev/xpress-rest-image:19072022-1"
      volumeMounts:
        - name: packs
          mountPath: "/home/packs"
