@@ -48,7 +48,7 @@ spec:
         discoverable: false
   containers:
    - name: xpress-ide   
-     image: "453345707098.dkr.ecr.us-west-2.amazonaws.com/xpress/dev/xpress-image:18072022-v1"
+     image: "453345707098.dkr.ecr.us-west-2.amazonaws.com/xpress/dev/xpress-ide-image:19072022-1"
      env:
          - name: THEIA_PLUGINS
            value: local-dir:../plugins
@@ -61,9 +61,6 @@ spec:
            name: plugins
          - mountPath: "/home/projects"
            name: xpressprojects
-     volumeMounts:
-         - mountPath: "/home/lib/packs"
-           name: packs
      mountSources: true
      ports:
          - exposedPort: 3000
