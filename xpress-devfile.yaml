@@ -10,7 +10,7 @@ components:
       https://raw.githubusercontent.com/mplab-xpresside/devfiles-dev-packs/main/meta-mplab-xpresside.yaml
   - type: chePlugin
     reference: >-
-      https://raw.githubusercontent.com/mplab-xpresside/devfiles-dev-packs/main/meta-xpress-packs.yaml
+      https://raw.githubusercontent.com/mplab-xpresside/devfiles-dev-packs/main/meta-xpress-rest.yaml
   - alias: mcc
     type: dockerimage
     image: 453345707098.dkr.ecr.us-west-2.amazonaws.com/xpress/prod/mcc-v5.1.0:latest
